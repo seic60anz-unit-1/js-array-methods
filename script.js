@@ -68,8 +68,15 @@ const horses = [
 // console.log(activeHorses)
 
 //4
-const AusHorses = horses.filter(function(horse){
-  return horse.country === 'AUS'
+// const AusHorses = horses.filter(function(horse){
+//   return horse.country === 'AUS'
+// })
+
+// console.log(AusHorses)
+
+//5
+const highrateHorses = horses.filter(function(horse){
+  return horse.hourlyRate >= 50
 })
 
-console.log(AusHorses)
+console.log(highrateHorses)
