@@ -61,8 +61,15 @@ const horses = [
 // console.log(birthYears)
 
 //3
-const activeHorses = horses.filter(function(horse){
-  return horse.active === true
+// const activeHorses = horses.filter(function(horse){
+//   return horse.active === true
+// })
+
+// console.log(activeHorses)
+
+//4
+const AusHorses = horses.filter(function(horse){
+  return horse.country === 'AUS'
 })
 
-console.log(activeHorses)
+console.log(AusHorses)
