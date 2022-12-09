@@ -75,8 +75,14 @@ const horses = [
 // console.log(AusHorses)
 
 //5
-const highrateHorses = horses.filter(function(horse){
-  return horse.hourlyRate >= 50
-})
+// const highrateHorses = horses.filter(function(horse){
+//   return horse.hourlyRate >= 50
+// })
 
-console.log(highrateHorses)
+// console.log(highrateHorses)
+
+//6
+const totalEarns = horses.map(function(horse){
+  return horse.hourlyRate * horse.numOfHoursWorked
+})
+console.log(totalEarns)
