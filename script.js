@@ -49,13 +49,20 @@ const horses = [
     }
   ]
 
-  //1
-  // horses.forEach(function(horse){
-  //   console.log(horse.name)
-  // })
+//1
+// horses.forEach(function(horse){
+//   console.log(horse.name)
+// })
 
-  //2
-const birthYears = horses.map(function(horse){
-  return horse.yearOfBirth
+//2
+// const birthYears = horses.map(function(horse){
+//   return horse.yearOfBirth
+// })
+// console.log(birthYears)
+
+//3
+const activeHorses = horses.filter(function(horse){
+  return horse.active === true
 })
-console.log(birthYears)
+
+console.log(activeHorses)
