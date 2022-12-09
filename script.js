@@ -82,7 +82,12 @@ const horses = [
 // console.log(highrateHorses)
 
 //6
-const totalEarns = horses.map(function(horse){
-  return horse.hourlyRate * horse.numOfHoursWorked
-})
-console.log(totalEarns)
+// const totalEarns = horses.map(function(horse){
+//   return horse.hourlyRate * horse.numOfHoursWorked
+// })
+// console.log(totalEarns)
+
+//BONUS
+
+
+console.log(horses.sort((a,b) =>  b.yearOfBirth - a.yearOfBirth ))
