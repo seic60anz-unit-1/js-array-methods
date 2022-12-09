@@ -50,6 +50,12 @@ const horses = [
   ]
 
   //1
-  horses.forEach(function(horse){
-    console.log(horse.name)
-  })
+  // horses.forEach(function(horse){
+  //   console.log(horse.name)
+  // })
+
+  //2
+const birthYears = horses.map(function(horse){
+  return horse.yearOfBirth
+})
+console.log(birthYears)
